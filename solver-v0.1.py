@@ -1,11 +1,16 @@
-import os
-import platform
+#Read Words
+file = open('/usr/share/dict/words', 'r')
+words = file.readlines()
+file.close()
 
-op_system = platform.system()
-file = None
-words = None
+current = 0
+possible = []
 
-elif:
-    file = open("/usr/share/dict/words", "r")
-    words = file.readlines()
-    file.close()
+while len(possible) != 10:
+    word = words[current].rstrip()
+    if len(word) == 5:
+        possible.append(word)
+        current = current + 1
+    else:
+        current = current + 1
+        continue
