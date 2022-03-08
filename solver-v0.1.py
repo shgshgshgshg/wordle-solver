@@ -26,3 +26,5 @@ while num_checking != len(possible):
         continue
     else:
         possible.pop(num_checking)
+
+print(len(possible))
