@@ -6,7 +6,7 @@ file.close()
 current = 0
 possible = []
 
-while len(possible) != 158390:
+while len(possible) != len(words):
     word = words[current].rstrip()
     if len(word) == 5:
         possible.append(word)
